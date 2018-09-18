@@ -57,7 +57,7 @@ table {
 
 body {
   color: #888;
-  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -86,6 +86,7 @@ h5 {
   color: #a9b2b9;
   font-size: 14px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 strong {
@@ -177,6 +178,17 @@ h1, h3, h4, h5, p {
 */
 .hero {
   padding: 22px 80px 66px 80px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 24px;
+  font-weight: 100;
 }
 
 /*
@@ -214,23 +226,14 @@ a {
   ============================================
 */
 .logo {
-  border-top: 4px solid #648880;
+  border-bottom: 2px solid #648880;
   padding: 40px 0 22px 0;
   float: left;
-}
-
-/*
-  ============================================
-  Primary footer
-  ============================================
-*/
-.primary-footer small{
-  float: left;
-}
-
-.primary-footer {
-  padding-bottom: 44px;
-  padding-top: 44px;
+  font-size: 48px;
+  line-height: 44px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .5px;
 }
 
 /*
@@ -240,9 +243,73 @@ a {
 */
 a {
   color: #648880;
+  text-decoration: none;
 }
 
 
 a:hover {
+  color: #a9b2b9;
+}
+
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+
+/*
+  ============================================
+  Tagline
+  ============================================
+*/
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+
+/*
+  ============================================
+  Primary nav
+  ============================================
+*/
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+/*
+  ============================================
+  Navigation
+  ============================================
+*/
+
+.nav {
+  text-align: right;
+}
+
+/*
+  ============================================
+  Footer
+  ============================================
+*/
+.primary-footer {
+  color: #648880;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+}
+
+
+/*
+  ============================================
+  Teaser
+  ============================================
+*/
+.teaser a:hover h3 {
   color: #a9b2b9;
 }
